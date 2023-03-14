@@ -1,3 +1,5 @@
+import getpass
+
 p1_score = 0
 p2_score = 0
 valid_options = ["rock", "paper", "scissors"]
@@ -7,7 +9,7 @@ while p1_score != 3 and p2_score != 3:
 
     valid_choice = True
     while valid_choice:
-        player_one_choice = input("Player one, type your choice: ")
+        player_one_choice = getpass.getpass("Player one, type your choice: ")
         if player_one_choice in valid_options:
             valid_choice = False
 
